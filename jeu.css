@@ -1,0 +1,131 @@
+header p {
+    border-radius: 10px;
+    background-color: royalblue;
+    text-align: center;
+    color: white;
+    border: 20px solid royalblue;
+    font-size: 30px;
+    font-family: Arial, Verdana, sans-serif;
+
+
+}
+
+footer p.col {
+    border-color: teal;
+    background-color: royalblue;
+    text-align: center;
+    color: white;
+
+
+}
+
+.images {
+    float: left;
+    height: 40px;
+    background-color: blue;
+
+}
+
+body {
+    background-image: url(Images/background.jpg);
+
+}
+
+.back {
+    color: white;
+}
+
+.bouton {
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    border: 8px solid royalblue;
+}
+
+.police {
+    font-family: "Arial Black";
+}
+
+.cartes {
+    float: right;
+    height: 250px;
+    width: 250;
+
+}
+
+.joueur {
+    color: black;
+    font-size: 30px;
+    font-family: "Arial Black";
+}
+
+.bouuton {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: 8px solid red;
+
+
+}
+
+.classe {
+    color: white;
+}
+
+.consigne {
+    color: white;
+    font-size: 22px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bout {
+    width: 150px;
+    height: 100px;
+    border-radius: 22px;
+    background-color: teal;
+    border: solid teal;
+}
+
+.elements {
+    display: flex;
+    height: 300px;
+
+    align-content: center;
+    padding-top: -10px;
+
+
+}
+
+#id {
+    color: white;
+}
+
+#idd {
+    background-color: teal;
+    border-radius: 22px;
+    border: solid teal;
+}
+
+.pages {
+    color: white;
+}
+
+.bt {
+    background-color: teal;
+    border-radius: 22px;
+    border: solid teal;
+
+}
+
+.ide {
+    color: white;
+}
+#cote{
+    padding: 25px;
+}

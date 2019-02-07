@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>les drapeaux du monde</title>
+    <link rel="stylesheet" href="jeu.css">
+    <script src="Projet/Ressources/pays.js"></script>
+    <script src="jeu.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+
+</head>
+
+<body>
+    <header>
+        <p>
+            <img class="images" src="Images/monde.gif" alt="globe" />
+            <strong> Game of Flags  </strong>
+        </p>
+    </header>
+    <!--l'id nomRegion sera manipulé par le javaScript afin d'afficher le nom de la région choisie-->
+
+    <h2 class="back"><strong>let's play with  :</strong> <span id="nomRegion"></span></h2>
+    <h3 class="back">You have 4 options, guess the the name of the country regarding the flag.</h3>
+    <p class="ide">Question : <span id="compteur">1</span></p>
+    <p id="id"> Score :<span id="score">0</span></p>
+    <script src="jeu.js"></script>
+
+
+
+    <div id="cote">
+        <!--Les 4 boutons qui proposeront les noms des pays de manière aleatoire -->
+        <!--En cliquant ,la fonction faire choix verifie si la réponse est bonne ou pas -->
+        <table class="elements" border="0">
+            <tr>
+                <td rowspan="4"><img src="" width="450" height="300" alt="lesDrapeaux" id="drap" /></td>
+            </tr>
+           
+            <tr class="question">
+                
+                <td><button class="bout" type="button" id="btn1" onclick="faireChoix(id)"></button></td>
+                <td><button class="bout" type="button" id="btn2" onclick="faireChoix(id)"></button></td>
+            </tr>
+            <tr>
+                <td><button class="bout" type="button" id="btn3" onclick="faireChoix(id)"></button></td>
+                <td><button class="bout" type="button" id="btn4" onclick="faireChoix(id)"></button></td>
+
+            </tr>
+        </table>
+            
+
+    </div>
+        <p class="pages"><strong>Click to move to the next question</strong> <br>
+
+            <button class="bt" type="button" onclick="augmenter()">next question</button>
+            
+     </p>
+
+
+    <script>
+        //On affiche sur la page le nom de la région qu'on a choisi.
+        let continent = new URL(location.href).searchParams.get("regions");
+        document.getElementById("nomRegion").innerHTML = continent;
+        //on affiche le drapeau à l'indice 0 du tableau
+        afficherDrapeau();
+        //on affiche non seulement la région mais aussi les pays qu'elle contient,aucun pays en dehors de ceux de la région ne doit etre affiché.
+        AfficherRegion();
+        //On affiche les propositions de manière au hasard,mais une des propositions doit correspondre au drapeau affiché.
+        questionHasard(AfficherRegion());
+        //faireChoix(id);
+
+    </script>
+
+</body>
+
+</html>
